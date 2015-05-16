@@ -1,0 +1,53 @@
+@font-face {
+    font-family: colorsofAutumn;
+    src: url(font/ColorsOfAutumn.ttf);
+}
+@font-face{
+	font-family:modern20;
+	src:url(font/MOD20.TTF);
+}
+body{
+	font-size:10px;
+	color:black;
+}
+
+.wrapper{
+	position:fixed;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    margin:0%;
+    z-index:0;
+	
+	display:block;
+    background:url(../img/334.jpg) no-repeat;
+	background-size:cover;
+}
+
+.content{
+	position:relative;
+}
+
+.title{
+	padding-top: 2.5em;
+	text-align: center;
+    font-size: 4em;
+	letter-spacing:0.25em;
+	font-family:colorsofAutumn;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:white;
+}
+
+.overlayBlock{
+	background-color:white;
+	opacity:0.5;
+	width:100%;
+	height:100%;
+	margin-top:100vh;
+}
+
+p{
+	font-size:2em;
+}
