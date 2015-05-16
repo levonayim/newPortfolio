@@ -1,0 +1,135 @@
+@font-face {
+    font-family: colorsofAutumn;
+    src: url(font/ColorsOfAutumn.ttf);
+}
+@font-face{
+	font-family:modern20;
+	src:url(font/MOD20.TTF);
+}
+body{
+	font-size:10px;
+	
+    margin:0%;
+    width:100%;
+    height:100%;
+}
+
+/** Logo block **/
+.logoSection{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	vertical-align:middle;
+	z-index:2;
+}
+.logoBlock{
+	width: 100px;
+	height:100px;
+	background-color:black;
+	margin-top:-50px;
+	margin-left:25px;
+}
+.myName{
+	font-family:colorsofAutumn;
+	text-transform:uppercase;
+	color:black;
+	font-size:2em;
+	margin-top:1em;
+	letter-spacing:0.5em;
+}
+.myName.lastName{
+	margin-top:0.5em;
+}
+
+/** Links to projects **/
+ul{
+    height: 5%;
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 15px;
+	font-family:colorsofAutumn;
+	text-transform:uppercase;
+	text-decoration:none;
+	background-color:black;
+    position: fixed;
+    bottom: 0;
+	left:0;
+	right:0;
+    width: 100%;
+}
+
+li {
+    display: inline;
+    margin-right: .75em;
+    list-style: none;
+    margin: 0;
+    padding: 0 5em;
+}
+
+ul li a,a:visited{
+	text-decoration:none;
+	color:white;
+}
+u li a:hover,a:active{
+	text-decoration:none;
+	color:yellow;
+}
+
+@media(max-width:30em){
+	ul {
+		display:block;
+		padding-bottom:15%;
+		height:10%;
+	}
+	ul li {
+		padding-top:1em;
+	}
+}
+/** END Links to projects **/
+
+/** When hover over link, change bkg image**/
+.content
+{
+    position:absolute;
+    left:0%;
+    top:0%;
+    margin:0%;
+    height:100%;
+    width:100%;
+    overflow:auto;
+    display:block;
+    z-index:2;
+}
+
+.bg
+{
+    position:fixed;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    margin:0%;
+    z-index:0;
+}
+
+.bg1
+{
+    display:block;
+    background:url(http://mooxidesign.com/wp-content/uploads/2014/04/Free-Polygonal-Low-Poly-Background-2.png) no-repeat;
+	background-size:cover;
+}
+
+.bg2
+{
+    display:block;
+    background:url(http://s3-us-west-2.amazonaws.com/i.cdpn.io/58345.EFlLy.3e949596209919be54cb61f243defd4b.png) no-repeat;
+    background-size:cover;
+
+}
+
+.hide{display:none;}
+/** END: When hover over link, change bkg image**/
